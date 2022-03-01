@@ -1,0 +1,8 @@
+replicas: 2
+
+ingress:
+  enabled: true
+  hosts:
+    - host: es.loc
+      paths:
+        - path: /
