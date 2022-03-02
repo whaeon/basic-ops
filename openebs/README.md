@@ -1,0 +1,7 @@
+## install openebs and start cStor
+### install by helm
+```bash
+helm repo add openebs https://openebs.github.io/charts
+helm repo update
+helm install openebs --namespace openebs openebs/openebs --set cstor.enabled=true --create-namespace
+```
