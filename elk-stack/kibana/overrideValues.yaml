@@ -1,0 +1,9 @@
+elasticsearchHosts: "http://es.loc"
+
+ingress:
+  enabled: true
+  hosts:
+    - host: kibana.loc
+      paths:
+        - path: /
+
