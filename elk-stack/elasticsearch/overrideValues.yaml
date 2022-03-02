@@ -1,4 +1,5 @@
 replicas: 2
+minimumMasterNodes: 2
 
 ingress:
   enabled: true
