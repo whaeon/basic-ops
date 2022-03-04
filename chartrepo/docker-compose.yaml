@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  chartmuseum:
+    image: ghcr.io/helm/chartmuseum:v0.13.1
+    container_name: chartrepo
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - DEBUG=1
+      - STORAGE=local
+      - STORAGE_LOCAL_ROOTDIR=/charts
+      - ./charts:/charts
